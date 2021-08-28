@@ -1,0 +1,14 @@
+.off-canvas .menu li a.clock {
+  width: 690px;
+  /*position: absolute;*/
+  top: 50%;
+  left: 50%;
+  transform: translateX(-52%) translateY(70%);
+}
+
+@media only screen and (max-width: 600px) {
+  .clock {
+ transform: translateX(-52%) translateY(16%);
+   width: 320px;
+ }
+}

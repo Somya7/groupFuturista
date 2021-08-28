@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="NhJjlOrqR/Kkg4cWXO+Xf82PEOXF4XbohgEFvUSTO+BhBQprjx3A2LeMkRz4VB3u/WvLrNDx6mU6e5RgGLbM8Q==" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <title>Group Futurista</title>
+    <meta content='' name='description'>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.rss" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/d-din" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/website/assets/logo/title_logo.png" />
+
+    <link rel="stylesheet" type="text/css" href="./fodox2019/css/animate.css" media="none" onload="if(media!='all')media='all'" />
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fodox2019/font/flaticon.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="./fodox2019/css/pe-icon-7-stroke.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" type="text/css" href="./fodox2019/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./fodox2019/css/custom-bootstrap.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" type="text/css" href="./fodox2019/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./fodox2019/css/responsive.css" media="none" onload="if(media!='all')media='all'">
+    <link href="./fodox2019/css/sweet-alert.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'" />
+    <link rel="stylesheet" media="all" href="assets/website/assets/application-2af0d9654de4f2219b71a2e2459022f2cf76ed2fa154fa8b2112fcd3a704bbc5.css" />
+    <link href="FOPM2019/css/jquery.fancybox.css" type="text/css" rel="stylesheet" />
+    
+</head>
+<style type="text/css">
+    /* header {
+    height: 150px;
+    min-height: 0px;
+ 
+}
+.past-events{
+  background: none;
+
+} */
+    
+    header {
+        position: relative;
+        background-color: transparent;
+        height: 5vh;
+        min-height: 9rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .grid-container {
+        max-width: inherit !important;
+        margin: 0 auto;
+    }
+    
+    a.brand {
+        margin: 0;
+    }
+    /*upcoming webinars*/
+    
+    section.upcoming-webinar {
+        background: #fff;
+        padding: 50px 0;
+    }
+    
+    .section-heading h2 {
+        font-size: 50px;
+        color: #24a9df;
+    }
+    
+    .webinar-schedule {
+        background: #f7f7f7;
+        box-shadow: 0 2px 48px rgb(0 123 255 / 30%);
+        margin-bottom: 50px;
+        color: #fff;
+    }
+    
+    div#pills-tabContent {
+        padding: 20px;
+    }
+    
+    ul#pills-tab {
+        margin: 0;
+    }
+    
+    .webinar-schedule li.nav-item a {
+        line-height: 70px;
+        font-size: 40px;
+        border-right: 1px solid #fff;
+        border-radius: 0;
+        background: #e3e3e3;
+        border-bottom: 1px solid;
+        color: #000;
+    }
+    
+    .panel.panel-default.webinar-panel {
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .single-schedule .author {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    
+    .schedule-info {
+        font-weight: 400;
+        width: calc(100% - 110px);
+    }
+    
+    .schedule-info-header {
+        background: #eeecec;
+        padding: 10px;
+        border-radius: 10px;
+        color: #000;
+    }
+    
+    .schedule-info h4.time {
+        font-size: 20px;
+        color: #444;
+        font-weight: 400;
+        display: inline-block;
+        background: #eab9b9;
+        padding: 4px 10px;
+        border-radius: 30px;
+    }
+    
+    h4.author-info {
+        font-size: 16px;
+    }
+    
+    h4.author-info span {
+        color: #1f9ed7;
+    }
+    
+    .panel-body p {
+        color: #000;
+    }
+    
+    h4.location {
+        color: #000;
+        font-size: 20px;
+    }
+    
+    h4.location strong,
+    h4.location span {
+        color: #23a8de;
+    }
+</style>
+
+<body class='no-js inquiries '>
+    <div class='off-canvas-wrapper'>
+
+        <header class="header-light">
+            <div class='off-canvas position-right' data-off-canvas id='offCanvas'>
+                <ul class='menu vertical'>
+                    <li class=''> <a href="index.html">Home</a> </li>
+                    <li class=''> <a href="About-Us.html">About Us</a> </li>
+                    <li class='dropdown'> <a href="Events.html">Our Events <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content"> <a href="past-events.html">PAST EVENTS</a> <a href="Events.html">FUTURE EVENTS</a> </div>
+                    </li>
+                    <li class='dropdown'> <a href="#">Our Webinars <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content"> <a href="past-webinar.html">PAST WEBINAR</a> <a href="future-webinar.html">FUTURE WEBINAR</a> </div>
+                    </li>
+
+                    <!--<li class=''>-->
+                    <!--    <a href="blog">Blogs</a>-->
+                    <!--</li>-->
+                    <li class=''>
+                        <a href="Contact-Us.html">Contact us</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <div class='off-canvas-content' data-off-canvas-content>
+                <div class='global-nav-wrapper'>
+                    <div class='grid-container'>
+                        <div class='grid-x grid-padding-x hide-for-small-only'>
+                            <div class='medium-4 cell'>
+                                <a class="brand" href="index.html"> </a>
+                            </div>
+                            <div class='medium-8 cell'>
+                                <ul class='menu float-right' data-dropdown-menu>
+                                    <li class=''> <a href="index.html">Home</a> </li>
+                                    <li class=''> <a href="About-Us.html">About Us</a> </li>
+                                    <li class='dropdown'> <a href="Events.html">Our Events <i class="fa fa-caret-down"></i></a>
+                                        <div class="dropdown-content"> <a href="past-events.html">PAST EVENTS</a> <a href="Events.html">FUTURE EVENTS</a> </div>
+                                    </li>
+                                    <li class='dropdown'> <a href="#">Our Webinars <i class="fa fa-caret-down"></i></a>
+                                        <div class="dropdown-content"> <a href="past-webinar.html">PAST WEBINAR</a> <a href="future-webinar.html">FUTURE WEBINAR</a> </div>
+                                    </li>
+                                    <!--<li class=''>-->
+                                    <!--    <a href="blog">Blogs</a>-->
+                                    <!--</li>-->
+                                    <li class=''>
+                                        <a href="Contact-Us.html">Contact us</a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='title-bar show-for-small-only'>
+                            <a class="brand" href=""> Group Futurista</a>
+                            <button class='menu-icon' data-toggle='offCanvas' type='button'>
+    Open Menu
+</button>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <style>
+            .dropdown {
+                float: left;
+            }
+            
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #eee !important;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            }
+            
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            
+            .dropdown-content a:hover {
+                background-color: #2cbced;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            section.event-schedule {
+                padding: 50px 0;
+                background: #fff;
+            }
+            
+            .partners-wrapper .grid-x .cell img {
+                background: #f7f7f7;
+                height: 100%;
+                float: left;
+                width: 100%;
+                padding: 2px;
+                box-shadow: 0 2px 18px rgba(0, 0, 0, 0.2);
+            }
+            
+            .section-heading p {
+                color: #000;
+            }
+            .show-more, .show-more-webinar {
+    text-align: center;
+    background: #23a6dc;
+    width: auto;
+    display: inline-block;
+    margin: auto;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+        </style>
+
+
+        </div>
+        <section class="upcoming-webinar">
+            <h2 class="section__title" style="font-weight: 600; color:#23a6dc;margin-top:20px;">Past Webinars</h2>
+            <div class="container">
+                <div class="row">
+                    
+                     <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/CS3.0/" class=""><img src="https://www.groupfuturista.com/images/CS3%2012th%20july.jpg"></a>
+                    </div>
+                    
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FOPEX2021/" class=""><img src="https://www.groupfuturista.com/images/FOPEX 30th June.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FODS5.0/" class=""><img src="https://www.groupfuturista.com/images/Fods5 24th june.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FOHR2021/" class=""><img src="https://www.groupfuturista.com/images/FOHR2021 21st june.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="http://www.groupfuturista.com/FOF3.0/" class=""><img src="https://www.groupfuturista.com/images/FOFM3 15th June.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FOAB2021/" class=""><img src="https://www.groupfuturista.com/images/FOAB2021 9th June.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FODL2021/" class=""><img src="https://www.groupfuturista.com/images/FODL3rd June.jpg"></a>
+                    </div>
+                    
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FWP2.0/" class=""><img src="https://www.groupfuturista.com/images/FWP27May2021.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/CX2021/" class=""><img src="https://www.groupfuturista.com/images/CX2021 24th may.jpg"></a>
+                    </div>
+                    
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar25/" class=""><img src="https://www.groupfuturista.com/images/BiometricAuthentication.jpg"></a>
+                    </div>
+                    
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar30/" class=""><img src="https://www.groupfuturista.com/images/FODS4thEdition.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FOWA/" class=""><img src="https://www.groupfuturista.com/images/FOWA3rdEdition.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/AI2021/" class=""><img src="https://www.groupfuturista.com/images/FOAIW24aprl.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/FWP2021/" class=""><img src="https://www.groupfuturista.com/images/Digital Workplace Summit.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar11/" class=""><img src="https://www.groupfuturista.com/images/ReimaginingDigitalIdentity.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar21/" class=""><img src="https://www.groupfuturista.com/images/16-Upcoming-webinar21.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar23/" class=""><img src="https://www.groupfuturista.com/images/ChatbotsandConversational.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar27/" class=""><img src="https://www.groupfuturista.com/images/WorkflowAutomationFI.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar18/" class=""><img src="https://www.groupfuturista.com/images/FraudManagementFM.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="http://www.groupfuturista.com/FODS2021/" class=""><img src="https://www.groupfuturista.com/images/FODS3O.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar7/" class=""><img src="https://www.groupfuturista.com/images/ChatbotsandConversationalwebinar.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar15/" class=""><img src="https://www.groupfuturista.com/images/CriticalLogistics.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar14/" class=""><img src="https://www.groupfuturista.com/images/CybersecurityandFraud.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar12/" class=""><img src="https://www.groupfuturista.com/images/FODS2O.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar8/" class=""><img src="https://www.groupfuturista.com/images/FODSO.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar9/" class=""><img src="https://www.groupfuturista.com/images/RE-DigitalIdentity3O.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar10/" class=""><img src="https://www.groupfuturista.com/images/Frauddetection.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar5/" class=""><img src="https://www.groupfuturista.com/images/ContactlessPaymentCP.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar4/" class=""><img src="https://www.groupfuturista.com/images/DIFinancial.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar3/" class=""><img src="https://www.groupfuturista.com/images/ContactlessPay.jpg"></a>
+                    </div>
+                    <div class="col-sm-4 mb-4">
+                        <a href="https://www.groupfuturista.com/webinar/" class=""><img src="https://www.groupfuturista.com/images/Re-imaginingDIFinance.jpg"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                    <div class="medium-12" style="margin:auto;">
+                        <div class="show-more-webinar">Show More</div>
+                    </div>
+                </div>
+        </section>
+        <div class="partners-wrapper hide-for-print">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="medium-12 cell">
+                        <h2 class="section__title" style="font-weight: 800;color:#000;">OUR PAST SPONSORS</h2>
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x grid-padding-y small-up-2 medium-up-4 large-up-6">
+
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Ada.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Auth0.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/birdeye.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/BlueYounder.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Boloro.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Camunda.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/CommerceHub.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Concentric.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Controlant.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/DataChecker.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/DefinedCrowd.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/e-bot7.jpg"></a>
+                    </div>
+
+
+                    <!---->
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/eGain.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/egress.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Ekata.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/FacePhi-2.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Flashpoint.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Forter.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Fraugster.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/galileo-sponsor.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/GlobalSign.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/grabba.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/GroupIB logo.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/HYPR.jpg"></a>
+                    </div>
+                    <!---->
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/idnow.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/ID-R_D.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Innovatrics.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/InstaFreight.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/interactions.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/jumio.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Keyless.png"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Kinaxis.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Kubient.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Linc.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/LLamasoft.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Mitek.jpg"></a>
+                    </div>
+
+                    <!---->
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Mitratech.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Nice.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/O9Solution.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/OneSpan-groupfuturista.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/onfido.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/onit.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/PingIdentity.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Pipl.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/plurilock.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Plurilock-2.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Project44.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/redislabs.jpg"></a>
+                    </div>
+
+                    <!---->
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Roambee.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Scanta.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Servisbot.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Shape.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Signvavio.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/Synack.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/TigerGraph.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/V2verify-groupfuturista.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/wallet.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/WorkFusion.jpg"></a>
+                    </div>
+                    <div class="cell">
+                        <a target="blank" href="#"><img src="images/speakers/past-speakers/zwipe.jpg"></a>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="medium-12" style="margin:auto;">
+                        <div class="show-more">Show More</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+
+<div class='footer-nav content_bg'>
+<div class='grid-container'>
+  <div class='grid-x grid-padding-x'>
+    <div class='medium-6 cell'>
+      <h5 class='footer-nav__title'>Group Futurista</h5>
+      <div class='grid-x grid-padding-x'>
+        <div class='small-6 cell'>
+          <ul class='no-bullet'>
+                 
+                <li>
+                  <a href="About-Us.html">About us</a>
+              </li>
+<!-- <li>
+<a href="team.html">Team</a>
+</li> -->
+<!-- <li>
+<a href="careers.html">Careers</a>
+</li> -->
+<li>
+  <a href="Contact-Us.html">Contact us</a>
+</li>
+<li>
+  <a href="Privacy-Policy.html">Privacy Policy</a>
+</li>
+<li>
+  <a href="Term-And-Condition.html">Terms & Conditions</a>
+</li>
+</ul>
+</div>
+<!-- <div class='small-6 cell'>
+<ul class='no-bullet'>
+<li>
+  <a href="blog.html">Blog</a>
+</li>
+<li>
+  <li>
+    <a href="privacy.html">Privacy policy</a>
+  </li>
+</ul>
+</div> -->
+</div>
+</div>
+<div class='medium-3 cell'>
+<h5 class='footer-nav__title'>
+
+</h5>
+<ul class='no-bullet'>
+  <span>Group Futurista OU.</span><br>
+  <span>Harju maakond, Kuusalu Vald, </span><br>
+ <span>Pudisoo Kula, </span>
+  <span>Mannimae, 74626.</span><br>
+  <span>Email: jennifer@groupfuturista.com</span> <br>
+<span><i class="fa fa-mobile-phone"> +44 203 432 7761. </i> 
+  </span><br>
+<!--<span>  +49 1728283266
+</span> <br>
+<span>  + 1 646 81 39287 
+</span> <br>
+   <span>  +44 203 432 7761
+</span>-->
+
+<!--   <span><i class="fa fa-envelope"></i> - Jennifer@groupfuturista.com</span>
+-->
+</ul>
+</div>
+<div class='medium-3 cell'>
+<h5 class='footer-nav__title'>
+ Group Futurista
+</h5>
+<!--<ul class='no-bullet'>
+  <span>Plot 12 , Flat 403 , 4th Floor</span><br>
+  <span>Lotus Chsl , Oshiwara , Mhada</span><br>
+   <span>Colony New Link Rd Andheri W</span><br>
+<span>Mumbai - </span>
+ <span>400053 </span><br>
+  <span>Maharashtra,India</span><br>
+</ul>-->
+
+
+                            <img src="https://groupfuturista.com/fodox2019/images/visa.png" width="80" class="card-size">
+                            <img src="https://groupfuturista.com/fodox2019/images/master.png" width="80" class="card-size">
+
+</div>
+</div>
+</div>
+</div>
+<div class='footer-legal-wrapper content_bg'>
+<div class='grid-container'>
+<div class='grid-x grid-padding-x'>
+  <div class='medium-4 cell'>
+    <p class='company-reg'>
+    © 2018 Group Futurista| Designed By:<a href="https://waytoglobal.com"> Waytoglobal Solutions</a>
+    <!--  Note : "The Event will be Conducted in English Language." -->
+</p>
+
+</div>
+<div class='medium-5 cell'>
+   <b><span class='company-reg'>
+    Note : "The Event will be Conducted in English."
+</span></b>
+</div>
+<div class='medium-3 cell medium-text-right'>
+<ul class='social-links'>
+   <li>
+        <a  href="https://www.facebook.com/GroupFuturista15/" target="_blank"><img src="https://www.groupfuturista.com/assets/website/assets/social/facebook-ae7eb1fd3aed9578f9211d7b9dc4967c8e80587321cecfe1cb8f1fa49d213e0b.png" alt="Facebook" /></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/futurista-events/" target="_blank"><img src="https://www.groupfuturista.com/assets/website/assets/social/linkedin-d56187ca195166478ad0d6f8bf4dc43832d941f1e3c6fe45af2a8164fe2e318d.png" alt="linkedin" /></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/groupfuturista15/ " target="_blank"><img src="https://www.groupfuturista.com/assets/website/assets/social/instagram-7cf26056e757fe2f4fb666db94e33f6cb749999257aac0f003fec3578210d72e.png" alt="instagram" /></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/FuturistaGroup" target="_blank"><img src="https://www.groupfuturista.com/assets/website/assets/social/twitter-84dd33c1fb7aa757c7a64b13973f091e0beaa9552c6c28d0dc76526e075b70d9.png" alt="twitter" /></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UC2DvTNoGMZwAu0eBKryjvsA/videos " target="_blank"><img src="https://www.groupfuturista.com/assets/website/assets/social/youtube-966b388e3863f5dc3c1eda7a365a2fa35d951f6180453d7174dbb5d95748a955.png" alt="youtube" /></a>
+      </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //this will execute on page load(to be more specific when document ready event occurs)
+        
+        if ($('.upcoming-webinar .col-sm-4').length > 5) {
+          $('.upcoming-webinar .col-sm-4:gt(5)').hide();
+          $('.show-more-webinar').show();
+        }
+        
+        $('.show-more-webinar').on('click', function() {
+          //toggle elements with class .ty-compact-list that their index is bigger than 2
+          $('.upcoming-webinar .col-sm-4:gt(5)').toggle();
+          //change text of show more element just for demonstration purposes to this demo
+          $(this).text() === 'Show More' ? $(this).text('Show Less') : $(this).text('Show More');
+        });
+        
+        
+        if ($('.partners-wrapper .cell').length > 12) {
+          $('.partners-wrapper .cell:gt(12)').hide();
+          $('.show-more').show();
+        }
+        
+        $('.show-more').on('click', function() {
+          //toggle elements with class .ty-compact-list that their index is bigger than 2
+          $('.partners-wrapper .cell:gt(12)').toggle();
+          //change text of show more element just for demonstration purposes to this demo
+          $(this).text() === 'Show More' ? $(this).text('Show Less') : $(this).text('Show More');
+        });
+        <!-- Smartsupp Live Chat script -->
+            var _smartsupp = _smartsupp || {};
+            _smartsupp.key = 'ae18e6d5f9206a42c44a7e5a16d883ae99f0bcd8';
+            window.smartsupp || (function(d) {
+                var s, c, o = smartsupp = function() {
+                    o._.push(arguments)
+                };
+                o._ = [];
+                s = d.getElementsByTagName('script')[0];
+                c = d.createElement('script');
+                c.type = 'text/javascript';
+                c.charset = 'utf-8';
+                c.async = true;
+                c.src = 'https://www.smartsuppchat.com/loader.js?';
+                s.parentNode.insertBefore(c, s);
+            })(document);
+        </script>
+</body>
+
+</html>

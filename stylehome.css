@@ -1,0 +1,43 @@
+
+.headerContent{
+   background-image: url('images/banner/banner1.jpg');
+   height:720px;
+   background-repeat: no-repeat;
+  
+   
+  
+}
+.topnav{
+    
+   color:#fff;
+ 
+  
+}
+.navlist{
+    padding-right: 10rem;
+    padding-top:-5rem;
+}
+.navlists{
+    padding-right: 2rem;
+}
+
+.contentBox{
+    color:#fff;
+   
+   margin-top: 10rem;
+   margin-bottom: 10rem;
+   margin-right: 10rem;
+   padding-bottom: 10rem;
+  
+  
+   position:absolute;
+   right:0px;
+   max-width: 750px;
+   
+}
+.past-events{
+    margin-top: 13rem;
+}
+
+
+  
